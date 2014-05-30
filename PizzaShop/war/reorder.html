@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>メニュー</title>
+    <script type="text/javascript" src="lib.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style media="screen and (min-device-width:481px)" >
+#site-box{
+ border: 1px solid #000000;
+ margin : 5px auto;
+ width:752px;
+ border: 1px solid #000000;
+ margin : 5px auto;
+}
+#left-box{
+ float: left;
+ width: 200px;
+          background-color: #FFFFFF;
+}
+#right-box{
+ float: right;
+ width: 550px;
+}
+
+#footer-box{
+ clear: both;
+ width: 732px;
+ clear : both ;
+}
+.ca {
+          display:block;
+ padding: 10px;
+ margin: 10px;
+         text-align: center;
+         font-style: italic;
+         font-weight: bold;
+}
+.paa{
+ margin : 0pt 0pt 10pt 10pt;
+}
+</style>
+  </head>
+  <body onload="initial(); bgcolor="#ffffff" text="#000000" link="#000080" vlink="#66ffff" alink="#ffcccc">
+    <div id="site-box"><div id="header-box">
+<br>
+<br>
+<h1>Pizza Shop</h1>
+</div><div id="left-box">
+<center>
+<span class="ca"><a href="index.html">top</a></span>
+<span class="ca"><a href="menu.html">menu</a></span>
+<span class="ca"><a href="order.html">order</a></span>
+<span class="ca"><a href="history.html">history</a></span>
+</center>
+</div>
+<div id="right-box">
+<div class="pa">
+      <h3>order</h3><br>
+      <center>
+        <table>
+        <form method="post" action="/edit">
+            <tr><th>氏名:</th><td><input type="text" name="title"></td></tr>
+            <!--<tr><th>URL:</th><td><input type="text" name="url"></td></tr>-->
+            <tr><th>注文:</th><td><textarea name="comment"></textarea></td></tr>
+            <tr><th></th><td><input type="submit" value="注文"></td></tr>
+        </form>
+        </table>
+        </center>
+        <p>注文の欄にあなたの注文したいピザの名前、枚数を書き込んでください</p>
+</div></div><div id="footer-box">
+</div></div>    
+  </body>
+</html>
+        
+
+
+ <!--       <form method="post" action="/edit">
+            <input type="hidden" id="id" name="id">
+            <tr><th>TITLE:</th><td><input type="text" id="title" name="title"></td></tr>
+            <tr><th>URL:</th><td><input type="text" id="url" name="url"></td></tr>
+            <tr><th>COMMENT:</th><td><textarea id="comment" name="comment"></textarea></td></tr>
+            <tr><th></th><td><input type="submit" value="追加"></td></tr>
+        </form>
+        </table>
+-->
