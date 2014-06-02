@@ -19,8 +19,8 @@
                 for (var i = 0;i < json.length;i++){
                     res += '<tr><td><a href="javascript:return false;" onclick="getData(' + json[i].id +');">' + json[i].id + '</a></td>';
                     res += '<td><a href="' + json[i].url + '">' + json[i].title + '</a></td>' +
-                    '<td><a href="edit.html?id=' + json[i].id + '">Edit</td>' +
-                    '<td><a href="del.html?id=' + json[i].id + '">Delete</td></tr>';
+                    '<td><a href="reorder.html?id=' + json[i].id + '">注文修正</td>' +
+                    '<td><a href="del.html?id=' + json[i].id + '">注文削除</td></tr>';
                 }
             }
             var obj = document.getElementById("datatable");
@@ -32,20 +32,23 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <style media="screen and (min-device-width:481px)" >
 #site-box{
+background-color: #F5D0A9;
  border: 1px solid #000000;
  margin : 5px auto;
  width:752px;
  border: 1px solid #000000;
  margin : 5px auto;
-}
+ 
+ }
 #left-box{
  float: left;
  width: 200px;
-          background-color: #FFFFFF;
+          background-color: #F5D0A9;
 }
 #right-box{
  float: right;
  width: 550px;
+  background-color: #FFFFFF;
 }
 
 #footer-box{
@@ -60,13 +63,14 @@
          text-align: center;
          font-style: italic;
          font-weight: bold;
+ background-color: #FFFFFF;
 }
 .paa{
  margin : 0pt 0pt 10pt 10pt;
 }
 </style>
   </head>
-  <body onload="getData(null);" bgcolor="#ffffff" text="#000000" link="#000080" vlink="#66ffff" alink="#ffcccc">
+  <body onload="getData(null);" bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
     <div id="site-box"><div id="header-box">
 <br>
 <br>

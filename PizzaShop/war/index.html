@@ -1,49 +1,29 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>PizzaShop</title>
-    <script type="text/javascript" src="lib.js"></script>
-        <script type="text/javascript">
-        <!--
-        function callback(request){
-            var json = eval(request.responseText);
-            var res = '';
-            if (json.length == 1){
-                res += '<tr><td>' + json[0].id +'</td></tr>';
-                res += '<tr><td>' + json[0].title +'</td></tr>';
-                res += '<tr><td>' + json[0].url +'</td></tr>';
-                res += '<tr><td>' + json[0].comment +'</td></tr>';
-            } else {
-                for (var i = 0;i < json.length;i++){
-                    res += '<tr><td><a href="javascript:return false;" onclick="getData(' + json[i].id +');">' + json[i].id + '</a></td>';
-                    res += '<td><a href="' + json[i].url + '">' + json[i].title + '</a></td>' +
-                    '<td><a href="edit.html?id=' + json[i].id + '">Edit</td>' +
-                    '<td><a href="del.html?id=' + json[i].id + '">Delete</td></tr>';
-                }
-            }
-            var obj = document.getElementById("datatable");
-            obj.innerHTML = res;
-        }
-        //-->
-        </script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <style media="screen and (min-device-width:481px)" >
+
+<html lang="ja-JP">
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<style media="screen and (min-device-width:481px)" >
 #site-box{
+background-color: #F5D0A9;
  border: 1px solid #000000;
  margin : 5px auto;
  width:752px;
  border: 1px solid #000000;
  margin : 5px auto;
-}
+ 
+ }
 #left-box{
  float: left;
  width: 200px;
-          background-color: #FFFFFF;
+          background-color: #F5D0A9;
 }
 #right-box{
  float: right;
  width: 550px;
+  background-color: #FFFFFF;
 }
 
 #footer-box{
@@ -58,51 +38,59 @@
          text-align: center;
          font-style: italic;
          font-weight: bold;
+ background-color: #FFFFFF;
 }
 .paa{
  margin : 0pt 0pt 10pt 10pt;
 }
 </style>
-  </head>
-  <body onload="getData(null);" bgcolor="#ffffff" text="#000000" link="#000080" vlink="#66ffff" alink="#ffcccc">
- <!--<h1>メニュー</h1>
-         <p>
-    トマトとモッツァレラのピザ<br>
-    マルゲリータ<br>
-    プロシュート<br>
-    ポテトマヨネーズ<br>
-    ビスマルク<br>
-    カプリチョーザ<br></p>
-    <table id="datatable" border="1">
-      <tr>
-        <td>wait...</td>
-      </tr>
-    </table>
-    <br>
-    <div><a href="add.html">注文する</a></div>-->
- <div id="site-box"><div id="header-box">
+
+
+<title>PizzaShop</title>
+<style></style></head>
+<body bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
+<div id="site-box"><div id="header-box">
 <br>
 <br>
 <h1>Pizza Shop</h1>
-</div><div id="left-box">
-<center>
-<span class="ca"><a herf="index.html">top</a></span>
-<span class="ca"><a href="menu.html">menu</a></span>
-<span class="ca"><a href="order.html">order</a></span>
-<span class="ca"><a href="history.html">history</a></span>
-</center>
-</div>
-<div id="right-box"><div class="pa">
-<br><br><br>
+</div><div id="left-box"><center><span class="ca"><a href="index.html">top</a></span><span class="ca"><a href="menu.html">menu</a></span><span class="ca"><a href="order.html">order</a></span><span class="ca"><a href="history.html">history</a></span></center></div><div id="right-box" style="background-image: url('new_pizza.jpg')"><div class="pa">
 
-      ピザショップへようこそ<br>
-<br>
-お客様のご要望に応え<br>安心安全な食材を使った様々なピザをご用意しております。
-<br>
-<br>
-<br>
-<br>
+<TABLE border="0" cellpadding="0" cellspacing="0">
+  <TBODY>
+    <TR>
+	
+      <TD width="20" height="20"><IMG src="sample1.png" width="20" height="20" border="0"></TD>
+      <TD background="sample2.png"></TD>
+      <TD width="20" height="20"><IMG src="sample3.png" width="20" height="20" border="0"></TD>
+	  
+    </TR>
+    <TR>
+      <TD background="sample4.png"></TD>
+	  <TD align="center"> 
+<h4 style="color:61210B;
+text-shadow:
+3px 3px 3px white,
+3px 3px 3px white,
+3px 3px 3px white;">
+<p><font size="5"> <b>ピザショップへようこそ</b></font></p>
+
+<b>お客様のご要望に応え</b><br>
+<b>安心安全な食材を使った様々なピザをご用意しております。</b></h4>
+      <BR>
+      <BR>
+      </TD>
+      <TD background="sample5.png"></TD>
+    </TR>
+    <TR>
+      <TD width="20" height="20"><IMG src="sample6.png" width="20" height="20" border="0"></TD>
+      <TD background="sample7.png"></TD>
+      <TD width="20" height="20"><IMG src="sample8.png" width="20" height="20" border="0"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<br><br><br><br><br><br><br><br><br><!--<img src = "pizza.photo4.jpg" width = "600" height = "420" alt = "">-->
 </div></div><div id="footer-box">
 </div></div>
-  </body>
+
+</body>
 </html>
