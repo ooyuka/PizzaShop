@@ -17,6 +17,8 @@
             var data = arr[0];
             var msg = '<table border="1"><tr><td>' + data.title + '</td></tr>';
             msg += '<tr><td>' + data.address + '</td></tr>';
+            msg += '<tr><td>' + data.phone + '</td></tr>';
+            msg += '<tr><td>' + data.mail + '</td></tr>';
             msg += '<tr><td>' + data.comment + '</td></tr></table>';
             document.getElementById("data").innerHTML = msg;
             document.getElementById("id").value = data.id;
@@ -79,9 +81,10 @@ background-color: #F5D0A9;
 <span class="ca"><a href="history.html">history</a></span>
 </center>
 </div>
-<div id="right-box">
+<div id="right-box" style="background-image: url('flower5.jpg')">
 <div class="pa">
       <h2>reorder</h2><br>
+      
       <center>
         <div>以下のデータを削除しますか？</div>
         <div id="data"></div>

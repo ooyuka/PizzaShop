@@ -36,6 +36,8 @@ public class MygaeServlet extends HttpServlet {
             for(LinkData data:list){
                 res += "{id:" + data.getId() + ",address:'" + data.getAddress() + "',title:'" +
                     data.getTitle() + "',date:'" + data.getDatetime() +
+                    "',phone:'"+ data.getPhone() +
+                    "',mail:'"+ data.getMail() +
                     "',comment:'" + data.getComment() + "'},";
             }
         }

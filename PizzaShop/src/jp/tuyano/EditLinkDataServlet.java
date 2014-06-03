@@ -26,6 +26,8 @@ public class EditLinkDataServlet extends HttpServlet {
         long id = Long.parseLong(req.getParameter("id"));
         String title = req.getParameter("title");
         String address = req.getParameter("address");
+        String phone = req.getParameter("phone");
+        String mail = req.getParameter("mail");
         String comment = req.getParameter("comment");
         PersistenceManagerFactory factory = PMF.get();
         PersistenceManager manager = factory.getPersistenceManager();
