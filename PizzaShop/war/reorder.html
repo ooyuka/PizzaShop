@@ -1,8 +1,8 @@
- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>注文修正</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>注文修正</title>
     <script type="text/javascript" src="lib.js"></script>
         <script type="text/javascript">
         <!--
@@ -16,7 +16,7 @@
             var data = arr[0];
             document.getElementById("id").value = data.id;
             document.getElementById("title").value = data.title;
-            document.getElementById("url").value = data.url;
+            document.getElementById("address").value = data.address;
             document.getElementById("comment").value = data.comment;
         }
         //-->
@@ -61,9 +61,9 @@ background-color: #F5D0A9;
  margin : 0pt 0pt 10pt 10pt;
 }
 </style>
-  </head>
-  <body onload="initial(); bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
-    <div id="site-box"><div id="header-box">
+    </head>
+    <body onload="initial();"　 bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
+        <div id="site-box"><div id="header-box">
 <br>
 <br>
 <h1>Pizza Shop</h1>
@@ -77,19 +77,20 @@ background-color: #F5D0A9;
 </div>
 <div id="right-box">
 <div class="pa">
-      <h3>order</h3><br>
+      <h2>reorder</h2><br>
       <center>
         <table>
         <form method="post" action="/edit">
-            <tr><th>氏名:</th><td><input type="text" name="title"></td></tr>
-            <!-- <tr><th>URL:</th><td><input type="text" name="url"></td></tr>-->
-            <tr><th>注文:</th><td><textarea name="comment"></textarea></td></tr>
-            <tr><th></th><td><input type="submit" value="注文"></td></tr>
+            <input type="hidden" id="id" name="id">
+            <tr><th>氏名:</th><td><input type="text" id="title" name="title"></td></tr>
+            <tr><th>住所:</th><td><input type="text" id="address" name="address"></td></tr>
+            <tr><th>注文:</th><td><textarea id="comment" name="comment"></textarea></td></tr>
+            <tr><th></th><td><input type="submit" value="追加"></td></tr>
         </form>
         </table>
         </center>
         <p>注文の欄にあなたの注文したいピザの名前、枚数を書き込んでください</p>
 </div></div><div id="footer-box">
 </div></div>    
-  </body>
+    </body>
 </html>
