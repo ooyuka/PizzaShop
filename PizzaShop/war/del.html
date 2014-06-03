@@ -1,8 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>メニュー</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>LinkDataの削除</title>
     <script type="text/javascript" src="lib.js"></script>
         <script type="text/javascript">
         <!--
@@ -15,7 +16,7 @@
             var arr = eval(request.responseText);
             var data = arr[0];
             var msg = '<table border="1"><tr><td>' + data.title + '</td></tr>';
-            msg += '<tr><td>' + data.url + '</td></tr>';
+            msg += '<tr><td>' + data.address + '</td></tr>';
             msg += '<tr><td>' + data.comment + '</td></tr></table>';
             document.getElementById("data").innerHTML = msg;
             document.getElementById("id").value = data.id;
@@ -63,8 +64,10 @@ background-color: #F5D0A9;
 }
 </style>
   </head>
-  <body onload="initial(); bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
-    <div id="site-box"><div id="header-box">
+<body onload="initial();"  bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
+</head>
+    <body onload="initial();"　 bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
+        <div id="site-box"><div id="header-box">
 <br>
 <br>
 <h1>Pizza Shop</h1>
@@ -78,14 +81,16 @@ background-color: #F5D0A9;
 </div>
 <div id="right-box">
 <div class="pa">
-      <h3>orderdelete</h3><br>
-      <div>以下の注文を削除しますか？</div>
+      <h2>reorder</h2><br>
+      <center>
+        <div>以下のデータを削除しますか？</div>
         <div id="data"></div>
         <form method="post" action="del">
             <input type="hidden" id="id" name="id">
             <input type="submit" value="削除">
         </form>
+ </center>
 </div></div><div id="footer-box">
 </div></div>    
-  </body>
+    </body>
 </html>

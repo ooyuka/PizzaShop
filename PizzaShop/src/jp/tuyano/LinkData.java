@@ -15,7 +15,7 @@ public class LinkData {
     private String username;
      
     @Persistent
-    private String url;
+    private String address;
      
     @Persistent
     private String comment;
@@ -23,10 +23,10 @@ public class LinkData {
     @Persistent
     private Date datetime;
  
-    public LinkData(String title,String url, String comment, Date datetime) {
+    public LinkData(String title,String address, String comment, Date datetime) {
         super();
         this.username = title;
-        this.url = url;
+        this.address = address;
         this.comment = comment;
         this.datetime = datetime;
     }
@@ -47,12 +47,12 @@ public class LinkData {
         this.username = title;
     }
  
-    public String getUrl() {
-        return url;
+    public String getAddress() {
+        return address;
     }
  
-    public void setUrl(String url) {
-        this.url = url;
+    public void setAddress(String address) {
+        this.address = address;
     }
  
     public String getComment() {

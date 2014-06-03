@@ -25,10 +25,10 @@ public class AddLinkDataServlet extends HttpServlet {
             throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         String title = req.getParameter("title");
-        String url = req.getParameter("url");
+        String address = req.getParameter("address");
         String comment = req.getParameter("comment");
         Date date = Calendar.getInstance().getTime();
-        LinkData data = new LinkData(title,url,comment,date);
+        LinkData data = new LinkData(title,address,comment,date);
         PersistenceManagerFactory factory = PMF.get();
         PersistenceManager manager = factory.getPersistenceManager();
         try {

@@ -13,12 +13,12 @@
             if (json.length == 1){
                 res += '<tr><td>' + json[0].id +'</td></tr>';
                 res += '<tr><td>' + json[0].title +'</td></tr>';
-                res += '<tr><td>' + json[0].url +'</td></tr>';
+                res += '<tr><td>' + json[0].address +'</td></tr>';
                 res += '<tr><td>' + json[0].comment +'</td></tr>';
             } else {
                 for (var i = 0;i < json.length;i++){
-                    res += '<tr><td><a href="javascript:return false;" onclick="getData(' + json[i].id +');">' + json[i].id + '</a></td>';
-                    res += '<td><a href="' + json[i].url + '">' + json[i].title + '</a></td>' +
+                    res += '<tr><td>' + json[i].id + '</td>';
+                    res += '<td><a href="javascript:return false;" onclick="getData(' + json[i].id +');">' + json[i].title + '</a></td>' +
                     '<td><a href="reorder.html?id=' + json[i].id + '">注文修正</td>' +
                     '<td><a href="del.html?id=' + json[i].id + '">注文削除</td></tr>';
                 }
@@ -84,7 +84,7 @@ background-color: #F5D0A9;
 </center>
 </div>
 <div id="right-box"><div class="pa">
-      <h3>history</h3>
+      <h2>history</h2>
       <br>
       <br>
      <center>
