@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>注文修正</title>
+        <title>PizzaShop</title>
     <script type="text/javascript" src="lib.js"></script>
         <script type="text/javascript">
         <!--
@@ -17,6 +17,8 @@
             document.getElementById("id").value = data.id;
             document.getElementById("title").value = data.title;
             document.getElementById("address").value = data.address;
+            document.getElementById("phone").value = data.phone;
+            document.getElementById("mail").value = data.mail;
             document.getElementById("comment").value = data.comment;
         }
         //-->
@@ -63,19 +65,17 @@ background-color: #F5D0A9;
 </style>
     </head>
     <body onload="initial();"　 bgcolor="#ffffff" text="#000000" link="#61380B" vlink="#61380B" alink="#61380B">
-        <div id="site-box"><div id="header-box">
+<div id="site-box"><div id="header-box">
 <br>
 <br>
 <h1>Pizza Shop</h1>
-</div><div id="left-box">
-<center>
+</div><div id="left-box"><center>
 <span class="ca"><a href="index.html">top</a></span>
 <span class="ca"><a href="menu.html">menu</a></span>
 <span class="ca"><a href="order.html">order</a></span>
 <span class="ca"><a href="history.html">history</a></span>
-</center>
-</div>
-<div id="right-box">
+</center></div>
+<div id="right-box" style="background-image: url('flower5.jpg')">
 <div class="pa">
       <h2>reorder</h2><br>
       <center>
@@ -84,8 +84,10 @@ background-color: #F5D0A9;
             <input type="hidden" id="id" name="id">
             <tr><th>氏名:</th><td><input type="text" id="title" name="title"></td></tr>
             <tr><th>住所:</th><td><input type="text" id="address" name="address"></td></tr>
+            <tr><th>電話番号:</th><td><input type="text" name="phone"></td></tr>
+            <tr><th>メールアドレス:</th><td><input type="text" name="mail"></td></tr>
             <tr><th>注文:</th><td><textarea id="comment" name="comment"></textarea></td></tr>
-            <tr><th></th><td><input type="submit" value="追加"></td></tr>
+            <tr><th></th><td><input type="submit" value="再注文"></td></tr>
         </form>
         </table>
         </center>

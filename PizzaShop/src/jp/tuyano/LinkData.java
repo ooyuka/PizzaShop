@@ -16,6 +16,12 @@ public class LinkData {
      
     @Persistent
     private String address;
+    
+    @Persistent
+    private String phone;
+    
+    @Persistent
+    private String mail;
      
     @Persistent
     private String comment;
@@ -23,10 +29,12 @@ public class LinkData {
     @Persistent
     private Date datetime;
  
-    public LinkData(String title,String address, String comment, Date datetime) {
+    public LinkData(String title,String address, String phone, String mail, String comment, Date datetime) {
         super();
         this.username = title;
         this.address = address;
+        this.phone = phone;
+        this.mail = mail;
         this.comment = comment;
         this.datetime = datetime;
     }
@@ -53,6 +61,22 @@ public class LinkData {
  
     public void setAddress(String address) {
         this.address = address;
+    }
+    
+    public String getPhone() {
+        return phone;
+    }
+ 
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    
+    public String getMail() {
+        return mail;
+    }
+ 
+    public void setMail(String mail) {
+        this.mail = mail;
     }
  
     public String getComment() {
